@@ -1,11 +1,18 @@
+import React from "react";
 import "./App.css";
+import "./components/Navbar/navbar.css";
+import Navbar from "./components/Navbar/Navbar";
+import Banner from "./components/Banner/Banner";
+import RowPost from "./components/RowPost/RowPost";
+import axios from "axios";
+//imports.......
 
 function App() {
 	return (
 		<div>
-			<div>
-				<h1>Minhaj</h1>
-			</div>
+			<Navbar />
+			<Banner />
+			<RowPost />
 		</div>
 	);
 }
