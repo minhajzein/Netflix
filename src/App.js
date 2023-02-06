@@ -4,7 +4,7 @@ import "./components/Navbar/navbar.css";
 import Navbar from "./components/Navbar/Navbar";
 import Banner from "./components/Banner/Banner";
 import RowPost from "./components/RowPost/RowPost";
-import axios from "axios";
+import { action, originals } from "./urls";
 //imports.......
 
 function App() {
@@ -12,7 +12,8 @@ function App() {
 		<div>
 			<Navbar />
 			<Banner />
-			<RowPost />
+			<RowPost url={originals} title="Netflix Originals" />
+			<RowPost url={action} title="Action Movies" isSmall />
 		</div>
 	);
 }
